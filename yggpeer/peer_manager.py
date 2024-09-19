@@ -29,7 +29,6 @@ class PeerManager:
 
         for interface_name, addresses in interfaces.items():
             for addr in addresses:
-                print (addr.address)
                 # validate the address start with reygg pattern
                 if addr.family == socket.AF_INET6:
                     #ip = ipaddress.IPv6Address(addr.address).exploded
@@ -122,7 +121,7 @@ class PeerManager:
                 
                 # If there's a callback, invoke it with the received message
                 if self.message_callback:
-                    self.message_callback(message)
+                    self.message_callback(peer_ip, message)
             except socket.error as e:
                 print(f"Error receiving message: {e}")
                 break

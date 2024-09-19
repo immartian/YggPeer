@@ -4,9 +4,9 @@ import time
 
 # Example usage
 if __name__ == "__main__":
-    def message_handler(msg):
+    def message_handler(src, msg):
         """Example of how an external app can handle received messages."""
-        print(f"Upstream App Received: {msg}")
+        print(f"\n{src}: {msg}")
 
     peer_manager = PeerManager()
 

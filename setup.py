@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="yggpeer",
-    version="0.1.0",
+    version="0.1.1",
     author="Isaac Mao",
     author_email="im@here.news",
     description="Peer-to-peer communication library over Yggdrasil",
