@@ -17,7 +17,7 @@ pip install yggpeer
 
 ## Example
 You may run up two instances of the following script to chat between two peers. 
-![Screenshot of the chat between two peers](./media/chat_between_peers.png)
+![Screenshot of the chat between two peers](media/chat_betwen_peers.png)
 
 ```python
 from yggpeer import PeerManager
